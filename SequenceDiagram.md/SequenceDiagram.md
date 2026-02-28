@@ -47,7 +47,7 @@ sequenceDiagram
     deactivate Engine
     
     
-    Host ->> Engine "go movetime 10000"
+    Host ->> Engine: "go movetime 10000"
     activate Engine
     Engine ->> Parser: parse "go" options (movetime/wtime/etc.)
     Engine ->> MoveGen: legalMoves = Position.legalMoves()
